@@ -17,5 +17,5 @@ task :run_positive do
 end
 
 task :run_all do
-  sh 'cucumber -t @positive,@negative'
+  sh 'cucumber -t @positive,@negative -f junit -o reports/ -f html -o reports/report.html'
 end
